@@ -1,0 +1,6 @@
+{
+  "name": "Pablo Torterolo | Clases de Música",
+  "description": "Clases personalizadas de guitarra, piano, bajo y producción musical en CABA y Online con Pablo Torterolo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
