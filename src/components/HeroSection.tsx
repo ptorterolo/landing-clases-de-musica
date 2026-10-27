@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Play, Pause, Volume2, VolumeX, MessageCircle, ArrowDown, Sparkles, MapPin, CheckCircle2 } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, MessageCircle, ArrowDown, MapPin, CheckCircle2 } from 'lucide-react';
 import { WHATSAPP_NUMBER, resolveAssetUrl } from '../data/musicData';
 
 interface HeroSectionProps {
@@ -75,7 +75,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Kicker Header */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide mb-5 shadow-sm">
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
           <span>Clases de Música Personalizadas</span>
           <span className="text-amber-400/60">·</span>
           <span>CABA & Online</span>

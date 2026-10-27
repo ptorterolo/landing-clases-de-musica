@@ -95,8 +95,8 @@ export const MethodCarouselSection: React.FC<MethodCarouselSectionProps> = ({ on
           </p>
         </div>
 
-        {/* 2-Column Split: Content on Left, Carousel on Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        {/* 2-Column Split: Content on Left, Carousel on Right + 12-Column Gear Strip */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-12 lg:gap-y-8 items-center">
           {/* Left Column: Pedagogical Pillars & Value Props */}
           <div className="lg:col-span-6 flex flex-col gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -122,24 +122,6 @@ export const MethodCarouselSection: React.FC<MethodCarouselSectionProps> = ({ on
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Studio Gear & DAWs strip */}
-            <div className="p-5 rounded-2xl bg-[#161824] border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <p className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-1">
-                  Equipamiento & Grabación
-                </p>
-                <p className="text-sm text-slate-200 font-medium leading-relaxed">
-                  Amplificadores Peavey, pedaleras análogas y digitales, DAW Pro Tools, Interfaz Audient, Micrófonos Warm, Telefunken y más.
-                </p>
-              </div>
-              <button
-                onClick={onOpenInquiry}
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm shrink-0 active:scale-95 transition-all shadow-md shadow-amber-400/20 cursor-pointer min-h-[44px] flex items-center justify-center"
-              >
-                Consultar Disponibilidad
-              </button>
             </div>
           </div>
 
@@ -243,6 +225,24 @@ export const MethodCarouselSection: React.FC<MethodCarouselSectionProps> = ({ on
                 {currentSlide + 1} / {totalSlides}
               </div>
             </div>
+          </div>
+
+          {/* Full-Width 12-Column Studio Gear & DAWs Strip */}
+          <div className="lg:col-span-12 p-6 sm:p-7 rounded-2xl bg-[#161824] border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
+              <p className="text-xs uppercase tracking-wider text-amber-400 font-bold mb-1.5">
+                Equipamiento & Grabación
+              </p>
+              <p className="text-sm sm:text-base text-slate-200 font-medium leading-relaxed">
+                Amplificadores Peavey, pedaleras análogas y digitales, DAW Pro Tools, Interfaz Audient, Micrófonos Warm, Telefunken y más.
+              </p>
+            </div>
+            <button
+              onClick={onOpenInquiry}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm shrink-0 active:scale-95 transition-all shadow-md shadow-amber-400/20 cursor-pointer min-h-[44px] flex items-center justify-center whitespace-nowrap"
+            >
+              Consultar Disponibilidad
+            </button>
           </div>
         </div>
       </div>
