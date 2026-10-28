@@ -34,7 +34,7 @@ export const TeacherProfileSection: React.FC<TeacherProfileSectionProps> = ({ on
     <section id="sobre-mi" className="py-16 sm:py-24 bg-[#0D0E15] relative overflow-hidden border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Bio Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-10">
           {/* Left Column: Official Live Concert Poster Photo */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-amber-400/30 shadow-2xl shadow-amber-500/10 group">
@@ -123,17 +123,18 @@ export const TeacherProfileSection: React.FC<TeacherProfileSectionProps> = ({ on
                 ))}
               </div>
             </div>
-
-            <div className="pt-2">
-              <button
-                onClick={onOpenInquiry}
-                className="w-full sm:w-auto min-h-[48px] px-8 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-amber-400/20 active:scale-95 transition-all cursor-pointer"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>Coordinar Horario por WhatsApp ({WHATSAPP_DISPLAY})</span>
-              </button>
-            </div>
           </div>
+        </div>
+
+        {/* Centered WhatsApp CTA Below Bio Grid */}
+        <div className="flex justify-center mb-16">
+          <button
+            onClick={onOpenInquiry}
+            className="w-full sm:w-auto min-h-[48px] px-8 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-amber-400/20 active:scale-95 transition-all cursor-pointer"
+          >
+            <MessageSquare className="w-4 h-4" />
+            <span>Coordinar Horario por WhatsApp ({WHATSAPP_DISPLAY})</span>
+          </button>
         </div>
 
         {/* Student Testimonials */}
